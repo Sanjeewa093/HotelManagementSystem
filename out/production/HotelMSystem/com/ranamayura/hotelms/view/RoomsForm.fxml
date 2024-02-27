@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomContext" prefHeight="472.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ranamayura.hotelms.controller.RoomsFormController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="714.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/security/rm222batch5-kul-03.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="23.0" text="Room Management" textFill="#316e8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="472.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToHomeOnAction" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #00336A;" text="Back to Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="580.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnNewRoomOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #059889;" text="+ New Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtId" layoutX="14.0" layoutY="74.0" prefHeight="27.0" prefWidth="159.0" promptText="Room Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ButtonBar layoutX="82.0" layoutY="136.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="txtPrice" layoutX="516.0" layoutY="73.0" prefHeight="27.0" prefWidth="174.0" promptText="Price per day">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSearch" layoutX="465.0" layoutY="146.0" prefHeight="27.0" prefWidth="226.0" promptText="Search Here">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSaveUpdate" layoutX="560.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnSaveUpdateOnAction" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #1574C1;" text="save Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblRoom" layoutX="14.0" layoutY="187.0" prefHeight="274.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="92.0" text="Room Number" />
+          <TableColumn fx:id="colType" prefWidth="115.0" text="Room Type" />
+            <TableColumn fx:id="colBed" prefWidth="102.0" text="Bed" />
+            <TableColumn fx:id="colStatus" prefWidth="86.0" text="Available" />
+            <TableColumn fx:id="colPrice" prefWidth="110.0" text="Price per day" />
+            <TableColumn fx:id="colOption" prefWidth="172.0" text="Operations" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="29.0" layoutY="114.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="txtType" layoutX="182.0" layoutY="74.0" prefHeight="27.0" prefWidth="159.0" promptText="Room Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtBed" layoutX="353.0" layoutY="74.0" prefHeight="27.0" prefWidth="159.0" promptText="Bed">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
